@@ -49,6 +49,10 @@ export async function fetchEditors() {
 export async function fetchLeaderboard() {
     const list = await fetchList();
 
+    if (!list) {
+        return [[], ['_list']];
+    }
+
     const scoreMap = {};
     const errs = [];
     list.forEach(([level, err], rank) => {
