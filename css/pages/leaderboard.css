@@ -27,6 +27,14 @@
     grid-row: 2;
     padding-block: 2rem;
 }
+.page-leaderboard .empty-container {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
 .page-leaderboard .board-container {
     padding-inline: 1rem;
 }
@@ -90,4 +98,8 @@
 }
 .page-leaderboard .player .table a:hover {
     text-decoration: underline;
+}
+.page-leaderboard .empty {
+    text-align: center;
+    color: var(--color-on-background-muted, var(--color-on-background));
 }
